@@ -1,4 +1,4 @@
-name: Ada (GNAT)
+name: Ada(GNAT)
 
 on:
   push:
