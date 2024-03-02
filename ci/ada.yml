@@ -18,6 +18,5 @@ uses: actions/checkout@v3
 run: >
 sudo apt-get update &&
 sudo apt-get install gnat gprbuild
-
-    - name: Build
-      run: gprbuild -j0 -p
+ - name: Build
+ run: gprbuild -j0 -p
