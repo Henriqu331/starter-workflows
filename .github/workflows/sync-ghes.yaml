@@ -37,7 +37,7 @@ found 0 vulnerabilities
     
     
       
-      'run: >\n' +
+      
       'sudo apt-get update &&\n' +
       'sudo apt-get install gnat gprbuild\n' +
       ' - name: Build\n' +
