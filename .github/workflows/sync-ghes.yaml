@@ -48,7 +48,7 @@ found 0 vulnerabilities
     column
   }
 }
-Unhandled error while syncing workflows YAMLException: duplicated mapping key at line 7, column 1:
+Unhandled error while syncing workflows YAMLException
     branches: [ $default-branch ]
     ^
     at generateError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
