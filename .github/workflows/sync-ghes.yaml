@@ -19,7 +19,7 @@ found 0 vulnerabilities
     at /home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/index.ts:101:22 {
 
   
-    name: null,
+    
     buffer: 'name: Ada (GNAT)\n' +
       '\n' +
       'on:\n' +
