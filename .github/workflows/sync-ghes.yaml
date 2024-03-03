@@ -64,7 +64,7 @@ Unhandled error while syncing workflows YAMLException
   reason
   mark
     name
-    buffer: 'name: Ada (GNAT)\n' +
+    buffer
       '\n' +
       'on:\n' +
       'push:\n' +
