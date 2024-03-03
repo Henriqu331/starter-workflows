@@ -63,7 +63,7 @@ Unhandled error while syncing workflows YAMLException
     at /home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/index.ts:101:22 {
   reason
   mark
-    name: null,
+    name
     buffer: 'name: Ada (GNAT)\n' +
       '\n' +
       'on:\n' +
