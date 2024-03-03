@@ -61,7 +61,7 @@ Unhandled error while syncing workflows YAMLException
     at load (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1596:19)
     at Object.safeLoad (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1618:10)
     at /home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/index.ts:101:22 {
-  reason: 'duplicated mapping key',
+  reason
   mark: Mark {
     name: null,
     buffer: 'name: Ada (GNAT)\n' +
