@@ -41,7 +41,7 @@ found 0 vulnerabilities
       'sudo apt-get update &&\n' +
       'sudo apt-get install gnat gprbuild\n' +
       
-      ' run: gprbuild -j0 -p\n' +
+      
       '\x00',
     position: 72,
     line: 6,
