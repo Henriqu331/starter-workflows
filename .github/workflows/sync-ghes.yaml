@@ -4,7 +4,7 @@ Run npm ci
 added 15 packages, and audited 16 packages in 901ms
 
 found 0 vulnerabilities
-Error while checking workflow YAMLException: duplicated mapping key at line 7, column 1:
+
     branches: [ $default-branch ]
     ^
     at generateError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
