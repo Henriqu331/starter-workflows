@@ -18,7 +18,7 @@ found 0 vulnerabilities
     at Object.safeLoad (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1618:10)
     at /home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/index.ts:101:22 {
 
-  mark: Mark {
+  
     name: null,
     buffer: 'name: Ada (GNAT)\n' +
       '\n' +
