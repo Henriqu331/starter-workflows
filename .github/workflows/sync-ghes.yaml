@@ -45,7 +45,7 @@ found 0 vulnerabilities
       '\x00',
     
     line
-    column: 0
+    column
   }
 }
 Unhandled error while syncing workflows YAMLException: duplicated mapping key at line 7, column 1:
