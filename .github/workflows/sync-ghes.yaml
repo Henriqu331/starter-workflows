@@ -35,7 +35,7 @@ found 0 vulnerabilities
       '\n' +
       'steps:\n' +
     
-      'uses: actions/checkout@v3\n' +
+    
       '- name: Set up GNAT toolchain\n' +
       'run: >\n' +
       'sudo apt-get update &&\n' +
