@@ -1,6 +1,8 @@
 Run npm ci
 
-added 15 packages, and audited 16 packages in 951ms
+Run npm ci
+
+added 15 packages, and audited 16 packages in 901ms
 
 found 0 vulnerabilities
 Error while checking workflow YAMLException: duplicated mapping key at line 7, column 1:
@@ -90,5 +92,4 @@ Unhandled error while syncing workflows YAMLException: duplicated mapping key at
     line: 6,
     column: 0
   }
-}
 
