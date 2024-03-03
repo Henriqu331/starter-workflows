@@ -5,7 +5,7 @@ added 15 packages, and audited 16 packages in 901ms
 
 found 0 vulnerabilities
 
-    branches: [ $default-branch ]
+    branches:[ $default-branch ]
     ^
     at generateError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
     at throwError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:173:9)
