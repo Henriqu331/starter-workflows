@@ -1,35 +1,94 @@
-name: Sync workflows for GHES
+Run npm ci
 
-on:
-  push:
-    branches: [ main ]
+added 15 packages, and audited 16 packages in 951ms
 
-jobs:
-  sync:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - run: |
-        git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-        git config user.email "cschleiden@github.com"
-        git config user.name "GitHub Actions"
-    - uses: actions/setup-node@v3
-      with:
-        node-version: '16'
-        cache: 'npm'
-        cache-dependency-path: script/sync-ghes/package-lock.json
-    - name: Check starter workflows for GHES compat
-      run: |
-        npm ci
-        npx ts-node-script ./index.ts
-      working-directory: ./script/sync-ghes
-    - run: |
-        git add -A
-        if [ -z "$(git status --porcelain)" ]; then
-          echo "No changes to commit"
-        else
-          git commit -m "Updating GHES workflows"
-        fi
-    - run: git push
+found 0 vulnerabilities
+Error while checking workflow YAMLException: duplicated mapping key at line 7, column 1:
+    branches: [ $default-branch ]
+    ^
+    at generateError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
+    at throwError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:173:9)
+    at storeMappingPair (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:335:7)
+    at readBlockMapping (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1098:9)
+    at composeNode (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1359:12)
+    at readDocument (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1519:3)
+    at loadDocuments (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1575:5)
+    at load (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1596:19)
+    at Object.safeLoad (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1618:10)
+    at /home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/index.ts:101:22 {
+  reason: 'duplicated mapping key',
+  mark: Mark {
+    name: null,
+    buffer: 'name: Ada (GNAT)\n' +
+      '\n' +
+      'on:\n' +
+      'push:\n' +
+      'branches: [ $default-branch ]\n' +
+      'pull_request:\n' +
+      'branches: [ $default-branch ]\n' +
+      '\n' +
+      'jobs:\n' +
+      'build:\n' +
+      '\n' +
+      'runs-on: ubuntu-latest\n' +
+      '\n' +
+      'steps:\n' +
+      '- name: Checkout\n' +
+      'uses: actions/checkout@v3\n' +
+      '- name: Set up GNAT toolchain\n' +
+      'run: >\n' +
+      'sudo apt-get update &&\n' +
+      'sudo apt-get install gnat gprbuild\n' +
+      ' - name: Build\n' +
+      ' run: gprbuild -j0 -p\n' +
+      '\x00',
+    position: 72,
+    line: 6,
+    column: 0
+  }
+}
+Unhandled error while syncing workflows YAMLException: duplicated mapping key at line 7, column 1:
+    branches: [ $default-branch ]
+    ^
+    at generateError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
+    at throwError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:173:9)
+    at storeMappingPair (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:335:7)
+    at readBlockMapping (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1098:9)
+    at composeNode (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1359:12)
+    at readDocument (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1519:3)
+    at loadDocuments (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1575:5)
+    at load (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1596:19)
+    at Object.safeLoad (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1618:10)
+    at /home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/index.ts:101:22 {
+  reason: 'duplicated mapping key',
+  mark: Mark {
+    name: null,
+    buffer: 'name: Ada (GNAT)\n' +
+      '\n' +
+      'on:\n' +
+      'push:\n' +
+      'branches: [ $default-branch ]\n' +
+      'pull_request:\n' +
+      'branches: [ $default-branch ]\n' +
+      '\n' +
+      'jobs:\n' +
+      'build:\n' +
+      '\n' +
+      'runs-on: ubuntu-latest\n' +
+      '\n' +
+      'steps:\n' +
+      '- name: Checkout\n' +
+      'uses: actions/checkout@v3\n' +
+      '- name: Set up GNAT toolchain\n' +
+      'run: >\n' +
+      'sudo apt-get update &&\n' +
+      'sudo apt-get install gnat gprbuild\n' +
+      ' - name: Build\n' +
+      ' run: gprbuild -j0 -p\n' +
+      '\x00',
+    position: 72,
+    line: 6,
+    column: 0
+  }
+}
+
