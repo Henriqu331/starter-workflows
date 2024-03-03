@@ -24,7 +24,7 @@ found 0 vulnerabilities
       '\n' +
       'on:\n' +
       'push:\n' +
-      'branches: [ $default-branch ]\n' +
+      
       'pull_request:\n' +
       'branches: [ $default-branch ]\n' +
       '\n' +
