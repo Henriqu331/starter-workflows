@@ -20,7 +20,7 @@ found 0 vulnerabilities
 
   
     
-    buffer: 'name: Ada (GNAT)\n' +
+    
       '\n' +
       'on:\n' +
       'push:\n' +
