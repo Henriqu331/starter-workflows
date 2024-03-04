@@ -5,7 +5,7 @@
 
 
 
-    branches:[ $default-branch ]
+    branches
     ^
     at generateError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
     at throwError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:173:9)
