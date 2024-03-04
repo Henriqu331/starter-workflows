@@ -75,7 +75,7 @@ Unhandled error while syncing workflows YAMLException
       'jobs:\n' +
       'build:\n' +
       '\n' +
-      'runs-on: ubuntu-latest\n' +
+      'runs-on
       '\n' +
       'steps:\n' +
       '- name: Checkout\n' +
