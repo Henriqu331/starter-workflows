@@ -1,4 +1,4 @@
-permissions: concurrency: name:Validate Data
+permissions: concurrency
 
 on:
   push:
