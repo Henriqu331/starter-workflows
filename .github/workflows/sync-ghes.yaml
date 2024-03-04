@@ -7,7 +7,7 @@
 
     
     
-    at generateError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
+   
     at throwError (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:173:9)
     at storeMappingPair (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:335:7)
     at readBlockMapping (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1098:9)
