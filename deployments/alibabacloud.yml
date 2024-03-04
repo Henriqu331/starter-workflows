@@ -20,7 +20,7 @@
 name: Build and Deploy to ACK
 
 on:
-  push:
+push:
     branches: [ $default-branch ]
 
 # Environment variables available to all jobs and steps in this workflow.
