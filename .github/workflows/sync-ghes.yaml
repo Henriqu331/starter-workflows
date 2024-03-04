@@ -80,7 +80,7 @@ Unhandled error while syncing workflows YAMLException
       'steps:\n' +
       '- name
       'uses
-      '- name: Set up GNAT toolchain\n' +
+      '- name
       'run: >\n' +
       'sudo apt-get update &&\n' +
       'sudo apt-get install gnat gprbuild\n' +
