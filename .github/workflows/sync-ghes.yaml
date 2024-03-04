@@ -70,7 +70,7 @@ Unhandled error while syncing workflows YAMLException
       'push:\n' +
       'branches
       'pull_request:\n' +
-      'branches: [ $default-branch ]\n' +
+      'branches
       '\n' +
       'jobs:\n' +
       'build:\n' +
