@@ -10,14 +10,6 @@
    
     
    
-    at readBlockMapping (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1098:9)
-    at composeNode (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1359:12)
-    at readDocument (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1519:3)
-    at loadDocuments (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1575:5)
-    at load (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1596:19)
-    at Object.safeLoad (/home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/node_modules/js-yaml/lib/js-yaml/loader.js:1618:10)
-    at /home/runner/work/starter-workflows/starter-workflows/script/sync-ghes/index.ts:101:22 {
-
   
     
     
