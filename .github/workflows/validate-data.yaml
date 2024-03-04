@@ -1,4 +1,4 @@
-hname: Validate Data
+name: Validate Data
 
 on:
   push:
