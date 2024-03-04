@@ -64,7 +64,7 @@ Unhandled error while syncing workflows YAMLException
   reason
   mark
     name
-    buffer
+
       '\n' +
       'on:\n' +
       'push:\n' +
