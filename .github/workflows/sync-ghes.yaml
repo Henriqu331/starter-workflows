@@ -81,7 +81,7 @@ Unhandled error while syncing workflows YAMLException
       '- name
       'uses
       '- name
-      'run: >\n' +
+      'run
       'sudo apt-get update &&\n' +
       'sudo apt-get install gnat gprbuild\n' +
       ' - name: Build\n' +
