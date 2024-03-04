@@ -79,7 +79,7 @@ Unhandled error while syncing workflows YAMLException
       '\n' +
       'steps:\n' +
       '- name
-      'uses: actions/checkout@v3\n' +
+      'uses
       '- name: Set up GNAT toolchain\n' +
       'run: >\n' +
       'sudo apt-get update &&\n' +
