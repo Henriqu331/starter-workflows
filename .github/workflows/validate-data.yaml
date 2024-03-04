@@ -1,4 +1,4 @@
-permissions: concurrency
+permissions: 
 
 on:
   push:
