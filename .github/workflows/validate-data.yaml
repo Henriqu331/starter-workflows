@@ -1,4 +1,4 @@
-concurrency:name: Validate Data
+concurrency: name:Validate Data
 
 on:
   push:
